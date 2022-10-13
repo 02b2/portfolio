@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .heroButton {
+        @apply px-6 py-2 border border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-500 transition-all
+        hover:border-[white]/40 hover:text-[gray]/40
+    }
+
+    .contactInput {
+        @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424]
+        text-[#cc33ff] placeholder-gray-500 transition-all focus:border-[#cc3] focus:text-[#cc3]
+    }
+}
+
+  /*--------------------------------------------------------------
+  # Social links
+  --------------------------------------------------------------*/
+  
+  .social-links a::after {
+    font-size: 8px;
+    display: inline-block;
+    color: rgb(248, 244, 242);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #320efd, 0 0 20px #0e46fd, 0 0 25px #320efd, 0 0 30px #420efd, 0 0 35px #420efd;
+    line-height: 1;
+    padding: 8px 6px;
+    border-radius: 70%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    margin: 1em;
+  }
+
+  .social-links {
+    text-align: center;
+  }
+
+  .social-links .youtube a::after{
+    color: #fd160e;
+    background: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fd160e, 0 0 20px #e2160e, 0 0 25px #992713, 0 0 30px #fd520e, 0 0 35px #fd520e;
+
+  }
+
+  .blue_neon{
+    text-align: center;
+    color: rgb(248, 244, 242);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #320efd, 0 0 20px #0e46fd, 0 0 25px #320efd, 0 0 30px #420efd, 0 0 35px #420efd;
+    font-size: 5em;
+  
+  }
